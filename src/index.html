@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="flex flex-col min-h-screen">
+
+<header class="w-full py-5 bg-white">
+    <div class="container px-5 md:flex md:justify-between big:px-0">
+        <h1 class="font-bold text-4xl mb-3 text-(--main-color)">FURNITURE</h1>
+        <nav class="flex items-center gap-1 max-w-[calc(100%-2rem)] xs:gap-2">
+            <button class="flex group">
+                <a href="#" class="flex justify-between gap-1 items-center xs:gap-2">
+                    <div class="flex justify-center items-center w-8 h-8 rounded-full bg-(--main-color)/6 group-hover:bg-(--main-color)">
+                        <svg class="group-hover:hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="#415BE7" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="hidden text-sm font-bold text-white group-hover:flex">1</span>
+                    </div>
+                    <span class="font-light text-base">
+                     Cart
+                    </span>
+                </a>
+            </button>
+            <div>
+                <svg class="sm:hidden" width="8" height="1" viewBox="0 0 8 1" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="8" y2="0.5" stroke="#DBDDE3"/>
+                </svg>
+                <svg class="hidden sm:block" width="48" height="1" viewBox="0 0 48 1" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="48" y2="0.5" stroke="#DBDDE3"/>
+                </svg>
+            </div>
+            <button class="flex group">
+                <a href="#" class="flex justify-between gap-1 items-center xs:gap-2">
+                    <div class="flex justify-center items-center w-8 h-8 rounded-full bg-(--main-color)/6 group-hover:bg-(--main-color)">
+                        <svg class="group-hover:hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="#415BE7" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="hidden text-sm font-bold text-white group-hover:flex">2</span>
+                    </div>
+                    <span class="font-light text-base">
+                     Review
+                    </span>
+                </a>
+            </button>
+            <div>
+                <svg class="sm:hidden" width="8" height="1" viewBox="0 0 8 1" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="8" y2="0.5" stroke="#DBDDE3"/>
+                </svg>
+                <svg class="hidden sm:block" width="48" height="1" viewBox="0 0 48 1" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="48" y2="0.5" stroke="#DBDDE3"/>
+                </svg>
+            </div>
+            <button class="flex">
+                <a href="#" class="flex justify-between gap-1 items-center sm:gap-2">
+                    <div class="flex justify-center items-center w-8 h-8 rounded-full bg-(--main-color)">
+                        <span class="text-sm font-bold text-white">3</span>
+                    </div>
+                    <span class="font-light text-base">
+                     Checkout
+                    </span>
+                </a>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main class="grow bg-neutral-400/5 h-full pt-10 pb-16">
+    <div class="container px-5 big:flex big:justify-between big:px-0">
+        <div class="big:mr-20">
+            <h2 class="font-bold text-[32px] mb-7">Checkout</h2>
+            <h4 class="font-bold text-xl mb-7">Shipping Information</h4>
+            <form class="flex flex-col md:w-168">
+                <label class="flex flex-col mb-6">
+                    <span class="font-medium text-base after:ml-1 after:text-red-500 after:content-['*']">Full name</span>
+                    <input class="font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400" type="text"
+                           id="name"
+                           name="Full Name" placeholder="Enter full name">
+                </label>
+                <label class="flex flex-col mb-6">
+                    <span class="font-medium text-base after:ml-1 after:text-red-500 after:content-['*']">Email address</span>
+                    <input class="font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400" type="text"
+                           id="e-mail"
+                           name="E-mail" placeholder="Enter email address">
+                </label>
+                <label class="flex flex-col mb-6">
+                    <span class="font-medium text-base after:ml-1 after:text-red-500 after:content-['*']">Phone number</span>
+                    <input class="font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400" type="text"
+                           id="tel"
+                           name="phone" placeholder="Enter phone number">
+                </label>
+                <label class="flex flex-col font-medium text-base mb-6">
+                    <span class="font-medium text-base after:ml-1 after:text-red-500 after:content-['*']">Country</span>
+                    <input class="font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400"
+                           type="password"
+                           id="country"
+                           name="Password" placeholder="Enter your country">
+                </label>
+
+                <div class="flex flex-col md:flex-row md:justify-between md:w-168">
+                    <label class="flex flex-col font-medium text-base mb-6 md:mb-10">
+                        City
+                        <input class="md:w-[210.67px] font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400"
+                               type="password"
+                               id="city"
+                               name="Password" placeholder="Enter city">
+                    </label>
+                    <label class="flex flex-col font-medium text-base mb-6 md:mb-10">
+                        State
+                        <input class="md:w-[210.67px] font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400"
+                               type="password"
+                               id="state"
+                               name="Password" placeholder="Enter state">
+                    </label>
+                    <label class="flex flex-col x font-medium text-base mb-10">
+                        ZIP Code
+                        <input class="md:w-[210.67px] font-light text-neutral-600 rounded-lg p-4 mt-2 border border-neutral-400"
+                               type="password"
+                               id="code"
+                               name="Password" placeholder="Enter ZIP code">
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="big:mt-20">
+            <h4 class="font-bold text-xl mb-7">Review your cart</h4>
+            <div class="flex flex-col gap-10">
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-4 ">
+                        <div class="w-[100px] h-[100px] border rounded-lg border-neutral-300">
+                            <img class="rounded-lg" src="assets/images/image_sofa.png" alt="sofa">
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h5 class="flex flex-col font-medium text-base mb-2 leading-none">DuoComfort Sofa
+                                    Premium</h5>
+                                <span class="text-sm text-neutral-500 leading-none">1x</span>
+                            </div>
+                            <span class="text-base font-bold leading-none">$20.00</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-[100px] h-[100px] border rounded-lg border-neutral-300">
+                            <img class="rounded-lg" src="assets/images/image_desk.png" alt="desk">
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h5 class="flex flex-col font-medium text-base mb-2 leading-none">IronOne Desk</h5>
+                                <span class="text-sm text-neutral-500 leading-none">1x</span>
+                            </div>
+                            <span class="text-base font-bold leading-none">$25.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between gap-4 sm:w-[528px]">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm font-light text-zinc-600">Subtotal</p>
+                        <span class="text-sm font-bold">$45.00</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm font-light text-zinc-600 leading-none">Shipping</p>
+                        <span class="text-sm font-bold leading-none">$5.00</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm font-light text-zinc-600 leading-none">Discount</p>
+                        <span class="text-sm font-bold leading-none">-$10.00</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-base font-bold text-zinc-600">Total</p>
+                        <span class="text-base font-bold">$40.00</span>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="text-base font-bold text-white w-full rounded-lg py-2 px-4 bg-(--main-color) hover:cursor-pointer hover:bg-(--button-hover) sm:w-[528px]"
+                            id="send-message">
+                        Pay Now
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<footer class="py-[36px] bg-white">
+    <div class="container text-center text-xs font-medium text-neutral-500 px-5 big:px-0">
+        © 2025 Furniture, Inc. All Rights Reserved
+    </div>
+</footer>
+
+</body>
+</html>

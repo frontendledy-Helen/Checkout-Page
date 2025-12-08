@@ -1,0 +1,38 @@
+@import url("https://fonts-online.ru/fonts/helvetica-neue");
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    src: url(assets/fonts/HelveticaNeue-Bold.otf);
+}
+@font-face {
+    font-family: HelveticaNeue-Medium;
+    src: url(assets/fonts/HelveticaNeue-Medium.otf);
+}
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url(assets/fonts/HelveticaNeue-Light.otf);
+}
+
+
+@theme {
+    --font-bold: "HelveticaNeue-Bold", sans-serif;
+    --font-medium: "HelveticaNeue-Medium", sans-serif;
+    --font-light: "HelveticaNeue-Light", sans-serif;
+    --main-color: #415BE7;
+    --button-hover: #2F45B9;
+    --breakpoint-xs: 23rem;
+    --breakpoint-big: 90rem;
+}
+
+@layer utilities {
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .font-label {
+
+    }
+}
