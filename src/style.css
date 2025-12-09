@@ -19,7 +19,7 @@
 @theme {
     --font-bold: "HelveticaNeue-Bold", sans-serif;
     --font-medium: "HelveticaNeue-Medium", sans-serif;
-    --font-light: "HelveticaNeue-Light", sans-serif;
+    --font-light-usual: "HelveticaNeue-Light", sans-serif;
     --main-color: #415BE7;
     --button-hover: #2F45B9;
     --breakpoint-xs: 23rem;
@@ -30,9 +30,5 @@
     .container {
         max-width: 1280px;
         margin: 0 auto;
-    }
-
-    .font-label {
-
     }
 }
